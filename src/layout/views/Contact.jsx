@@ -1,5 +1,5 @@
 import Logo from '../../../public/S0-sf.png'
-import SocialLink from '../../components/SocialLink'
+import SocialLink from '../../components/module/SocialLink'
 
 const Contact = () => {
   return (

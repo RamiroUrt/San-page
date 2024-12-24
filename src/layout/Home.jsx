@@ -1,16 +1,17 @@
-import HomeStart from "./views/HomeStart"
+import HomeStart from "./views/HomeStart";
 import Info from './views/Info'
 import Contact from './views/Contact'
+import Container from "../components/module/Container"
 
 
 const Home = () => {
 return (
     <>
-        <main className="contain-main">
+        <Container>
             <HomeStart />
             <Info/>
             <Contact/>
-        </main>
+        </Container>
     </>
 )
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +18,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cedarville Cursive", serif;
+}
+#name{
+  position: relative;
+}
+h1{
+  position: relative;
+  z-index: 1;
 }
 html{
   background-image: url(../public/BlogEditorial.jpg);
@@ -35,7 +42,17 @@ html{
   border-radius: var(--set-border); 
   background: var(--primary-color);
 }
-
+h2{
+  font-size: 25px;
+}
+li{
+  padding-left: 30px;
+  list-style-type: none;
+  padding-left: 30px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/svg/butterfly-svgrepo-com.svg');
+}
 
 .contain-main{
   width: 65%;
@@ -120,6 +137,165 @@ footer{
   height: 30px;
 }
 
+/*RECOMENTADITONS*/
+.tittle{
+  font-family: "Inconsolata", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-cont{
+  font-family: "Cedarville Cursive", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-recomendations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+  width: 50%;
+}
+.text-recomendations>h1{
+  font-size: 4rem;
+}
+.contain-books-recomendations{
+  margin-top: 3em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.book-container {
+  margin-top: 2em;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 2em;
+}
+
+.img-book img {
+  width: 300px; 
+  height: auto;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.description-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-book h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+
+.description-book p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.sessions-container{
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.sessions-container>h1{
+  font-size: 4rem;
+}
+.sessions-img-container{
+  width: 300px;
+  height: 300px;
+}
+.sessions-container>img{
+  width: 100%;
+  object-fit: contain;
+}
+.session{
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.session>h3{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 30px;
+  text-align: center;
+}
+.session>h4{
+  text-align: center;
+}
+.li-sessions{
+  display: flex;
+  gap: 0.5em;
+}
+
+
+/*WORKSHOP*/
+
+.sessions-container img {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+.sessions-container>h2{
+  margin-top: 1em;
+}
+.courses-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.course{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2em;
+}
+.course >img{
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+.course-cont{
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+  width: 80%;
+}
+
+/*ABUOT ME*/
+.abut-cont{
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.abut-cont > h1{
+  font-size: 4rem;
+}
+.desc-about > h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 @media (max-width: 1110px){
   .contain-main{
     width: 100%;
@@ -134,4 +310,19 @@ footer{
     width: 100%;
     object-fit: contain;
   }
+  .tittle>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+  }
 }
+@media (max-width:500px){
+  .reco-tit{
+    font-size: 40px !important;
+    text-align: center;
+  }
+}
+
