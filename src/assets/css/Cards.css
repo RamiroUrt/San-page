@@ -1,0 +1,161 @@
+/* From Uiverse.io by MuhammadHasann */ 
+.card {
+    position: relative;
+    background: #FAD4D8;
+    width: 290px;
+    height: 365px;
+    cursor: pointer;
+    transition: all .3 ease;
+    overflow: visible;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+  }
+  
+  .product {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+  }
+  .shine {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 265px;
+    overflow: hidden;
+  }
+  
+  
+  .pattern-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: auto;
+    z-index: 2;
+  }
+  
+  .pattern-2 {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 200px;
+    height: auto;
+    z-index: 2;
+  }
+  
+  .tree {
+    position: absolute;
+    bottom: -0;
+    right: -2%;
+    width: 100px;
+    height: auto;
+    transform-origin: 100% 0;
+    transform: rotate(-15deg);
+    z-index: 3;
+  }
+    
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card:hover .tape-1 {
+    transform: scale(1);
+  }
+  
+  .card:hover .tape-2 {
+    transform: scale(1);
+  }
+  
+  .card:hover .shine-effect {
+    left: -100%;
+  }
+  
+  .card:active {
+    transform: scale(1.02) 
+    translate(0, 5%);
+  }
+  
+  .card:active .tape-1 {
+    transform-origin: 0 100%;
+    transform: scaleY(1.1);
+  }
+  
+  .card:active .tape-2 {
+    transform-origin: 0 100%;
+    transform: scaleY(1.1);
+  }
+  
+  .fil-tape-10 {
+    fill: #A99473
+  }
+  
+  .fil-tape-11 {
+    fill: #BBAA88;
+    fill-rule: nonzero
+  }
+  
+  .fil-tape-20 {
+    fill: #A99473
+  }
+  
+  .fil-tape-21 {
+    fill: #BBAA88;
+    fill-rule: nonzero
+  }
+  
+  .fil-pattern-1 {
+    fill: #e5e7eb
+  }
+  
+  .fil-pattern-2 {
+    fill: #333333;
+    fill-rule: nonzero
+  }
+  
+  .fil0 {
+    fill: #333333
+  }
+
+.card-button-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cedarville Cursive", serif;
+    font-size: 17px;
+    font-weight: 900;
+  }
+  .card-button-contain {
+    background-color: hsla(0,0%,100%,.2);
+    box-shadow: inset 0 0 1em .5em hsla(0,0%,100%,.1);
+    height: 3em;
+    position: absolute;
+    transform: rotate(-30deg);
+    width: 13em;
+    -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
+  }
+  .card-button-contain:after,
+  .card-button-contain:before {
+    background-size: .4em .4em;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: .2em;
+  }
+  .card-button-contain:after {
+    background-image: linear-gradient(45deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+    linear-gradient(-45deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 0 100%;
+    left: -.2em;
+  }
+  .card-button-contain:before {
+    background-image: linear-gradient(135deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+    linear-gradient(-135deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 100% 100%;
+    right: -.2em;
+  }

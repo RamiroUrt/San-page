@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-color: RGB(255, 223, 211);
+  --secondary-color: RGB(255, 244, 220);
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(0, 0, 0);
+  --set-border: 10px
+  --pink-color: #FAD4D8;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cedarville Cursive", serif;
+}
+html{
+  background-image: url(../public/BlogEditorial.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: var(--set-border); 
+  background: var(--primary-color);
+}
+
+
+.contain-main{
+  width: 65%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.home-main{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-main{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1em;
+}
+/* .main-picture >img, */
+.logo-main > img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.main-picture{
+  width: 90%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto; 
+}
+.main-picture>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-text{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4em;
+  font-family: "Cedarville Cursive", serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.paper-plane{
+  width: 150px;
+}
+
+.contain-cards{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 2em;
+  padding-right: 2em;
+  align-items: center;
+  gap: 3em;
+}
+footer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+
+.social-contact-contain{
+  display: flex;
+  gap: 1em;
+}
+.social-contact-contain >a{
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1110px){
+  .contain-main{
+    width: 100%;
+  }
+  .main-picture{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .main-picture > img{
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+  }
+}
